@@ -1,6 +1,10 @@
 # ⏳ Pomodoro Minimalista
 
-Um cronômetro Pomodoro moderno, minimalista e automatizado, desenvolvido com foco em alta produtividade e design inspirado no ecossistema Apple (Glassmorphism).
+Um cronômetro Pomodoro moderno, minimalista e automatizado, desenvolvido com foco em alta produtividade.
+
+acesse atráves do Link: 
+
+https://btechsolution.github.io/pomodorotimer/
 
 ## ✨ Funcionalidades
 
