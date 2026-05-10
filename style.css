@@ -1,0 +1,102 @@
+:root {
+    --bg-color: #050505;
+    --card-bg: rgba(25, 25, 25, 0.85);
+    --accent-focus: #0a84ff;
+    --accent-break: #30d158;
+    --text-main: #ffffff;
+    --text-dim: #8e8e93;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    width: 320px;
+    padding: 50px 30px;
+    border-radius: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
+}
+
+.status-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-focus);
+    font-weight: 700;
+    padding: 6px 16px;
+    background: rgba(10, 132, 255, 0.1);
+    border-radius: 100px;
+    transition: 0.5s ease;
+}
+
+.timer-section h1 {
+    font-size: 5.5rem;
+    font-weight: 200;
+    margin: 20px 0;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -3px;
+}
+
+.settings {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.field label {
+    display: block;
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.field input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+    width: 70px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-main { background: #fff; color: #000; }
+#pause { background: rgba(255,255,255,0.1); color: #fff; }
+.btn-link { background: transparent; color: var(--text-dim); font-size: 0.8rem; }
+
+button:active { transform: scale(0.96); }

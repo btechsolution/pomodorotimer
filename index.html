@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Infinity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header>
+            <span class="status-badge" id="status">Foco</span>
+        </header>
+
+        <section class="timer-section">
+            <h1 id="timer">25:00</h1>
+        </section>
+
+        <section class="settings">
+            <div class="field">
+                <label>Foco</label>
+                <input type="number" id="focusTime" value="25" min="1">
+            </div>
+            <div class="field">
+                <label>Pausa</label>
+                <input type="number" id="breakTime" value="5" min="1">
+            </div>
+        </section>
+
+        <footer class="controls">
+            <button id="start" class="btn-main">Iniciar</button>
+            <button id="pause">Pausar</button>
+            <button id="reset" class="btn-link">Resetar</button>
+        </footer>
+    </main>
+
+
+    <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
